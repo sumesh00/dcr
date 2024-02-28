@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" 
+     integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+     <link rel="shortcut icon" href="img/logo-dcr-removebg-preview.png" />
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+      integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
+      integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+     <title>
+    DCR Builders
+</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="Our Story.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+      />
+    </head>
+  </head>
+
+    <!-- <h1>
+      <img src="img/logo-dcr-removebg-preview.png" alt="" width="100" height="100" class="d-inline-block align-text-top">
+       
+    </h1> -->
+
+<body>
+  <header class="nav">
+    
+    <h2><img src="img/logo-dcr-removebg-preview.png" alt="" width="50" height="50" class="d-inline-block align-text-top"></h2>
+   
+    <input type="checkbox" name="id" id="chk1">
+    <div class="logo">
+      <h1>DCR Builders</h1></div>
+    <div class="search-box">
+      <form action="">
+        <input type="text" name="search" id="srch" placeholder="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    <ul>
+      <li class="nav-item ">
+        <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">About</a>
+      </li> -->
+      <li class="nav-item ">
+        
+          <a class="nav-link active text-white" aria-current="page"  href="Our Story.html">About</a>
+        
+        <!-- <ul class="dropdown-menu ">
+          <li><a class="dropdown-item" href="Our Story.html">Our Story</a></li>
+          <li><a class="dropdown-item" href="Our Story.html">Our Founder</a></li>
+          <li><a class="dropdown-item" href="Our Story.html">Vision & Mission</a></li>
+          <li><a class="dropdown-item" href="#">Our Core Values</a></li>
+        </ul> -->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active text-white" aria-current="page" href="ongoing.html">Ongoing Project</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active text-white" aria-current="page" href="finished.html">Completed Project</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active text-white" aria-current="page" href="contact.html">Contact</a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/people/Dcr-Builders/pfbid0ho26KXZESTtaCpX6hyCUGa9tYhRcqBiT6SnKDfkoBfzwRyhei5qRaNkdeVKdgBLCl/?ref=xav_ig_profile_web"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/dcr_builders/"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </li>
+    </ul>
+    <div class="menu">
+      <label for="chk1">
+        <i class="fa fa-bars"></i> 
+      </label>
+     
+    </div>
+    
+  </header>
+
+  <script>  
+    {
+         const nav =document.querySelector(".nav");
+         let lastScrollY = window.scrollY;
+
+         window.addEventListener("scroll", () =>{
+          if (lastScrollY < window.scrollY) {
+            nav.classList.add("nav--hidden")
+          } else {
+            nav.classList.remove("nav--hidden")
+          }
+
+          lastScrollY = window.scrollY;
+         });
+    }
+
+      </script>
+
+  <section>
+  <div class="picture">
+    <img src="img/banner.jpg" alt="..." >
+  </div>
+ <br>
+  </section>
+
+
+  <section class="relative pt-48" id="about-story">
+    <div class="container">
+      <div class="about-sec">
+    <div class="col-xl-12 col-lg-12">
+         <div class="row justify-content-center">
+           <div class="col-auto">
+             <div class="sectionHeading -top-line text-center">
+              <span class="sectionHeading__subtitle">Our Story</span>
+              <h2 class="sectionHeading__title text-white">Who We Are</h2>
+             </div>
+            </div>
+               </div>
+           
+      
+          <div class="sectionHeading text-center">
+            <span class="sectionHeading__subtitle1 ">DCR BUILDERS & DEVELOPERS</span>
+            <h5 class="leading-3xl ">We Help You Building The Dreams & Bring More Than You Expect</h5>
+            <p>Senthoor property developers is real property that consists of land and improvements, which include buildings. Whether you’re just beginning your property journey or have had years of experience, this is the place for people to come together to explore, research and share their passion for Coimbatore property. If you are looking for a land, an investment property with a great rental return or possibly even inspiration for updating that building, senthoor property developers is here to help you make better decisions for taking your next step. Our operations include Coimbatore leading residential and commercial property sites. we have built an on-ground team and a technology integrated workflow that have helped us become one of the best real-estate service providers in Coimbatore and other cities across Tamil Nadu.</p>
+            <p>We realised very quickly that we would have to do something different to make this disorganised industry easy for a client to navigate. Our aim was to help clients become more aware of how their money and time was being utilised and towards what ends.  We go the extra mile to make sure that our buyers and sellers are fully aware of the finer points of the process, particularly the legal aspects.</p>
+            <p>As an organisation, we hold ourselves to the highest standards possible to achieve maximum client satisfaction. We pride ourselves on having created a seamless system that offers clients a time and cost efficient service, complete transparency, 100% confidentiality, full guidance and step-by-step updates with the help of dedicated Customer Relationship Management teams for each service.</p>
+          </div>
+        </div>
+     
+      </div>
+    </div>
+  </section>
+
+
+   <!-- section start -->
+   <section class="pt-48 founder" id="about-founder">
+    <!-- container start -->
+    <div class="container">
+      
+      <div class="row1">
+        <div class="col-sm-12">
+          <div class="row">
+        <div class="col-xl-4 col-sm-12">
+          <div class="img-founder">
+          <img src="img/dcr.jpeg">
+          <h6> G.Gokul </h6>
+          <p>Founder & Managing Director</p>
+          </div>
+        </div>
+        <div class="col-xl-8 col-sm-12">
+        <h2 class="sectionHeading__title ">Our <span>Founder</span></h2>
+        <p class="pt-24 text-white">As a property owner who struggled for many years navigating the system, Founder & Managing Director D.Sidharth client-oriented approach comes from a very personal place.</p>
+        <p>As far back as 1995, he was faced with many hurdles when trying to sell a plot of land as he had no one to guide him on the necessary paperwork. And then it took him nearly a decade between 1998 and 2007 to sell his family property. 
+            Over the course of this challenging period, he was exposed to the many sides of the real-estate business – from the brokerage services related to the market, 
+            buying and selling, as well as all the complex legal aspects, such as selling an unapproved plot and the process required to register a property.</p>
+        <p>Not one to give up in the face of adversity, Siddharth unsuccessfully tried his hand at two commercial projects, but then went on to successfully set up another two such ventures.
+             From both his failures and successes, he learned valuable lessons on the right approach and planning needed to see through a real-estate project.
+              Then, he realised the importance of having liaison services as an integral and integrated part of any real-estate company offering brokerage services. Hence, the motto: "Realise greater value with peace of mind."</p>
+         </div>
+        <div class="col-sm-12">
+        <p>It was the amalgamation of many years of experience as a real-estate customer and businessman that led him to evolve the ‘hybrid model’ of Lands & Lands, bringing together brokerage, liaisoning, property and facility management services all under one roof. But more than anything else, it was his early years of struggle that embedded in him a deep appreciation for the need to reorganise the real-estate industry to make it more client oriented. </p>
+        </div> 
+      </div>
+    </div>
+    </div>
+    </div>
+   
+   </section>
+  
+
+   <section>
+    <div class="container10">
+      <div class="box">
+     <div class="imgBx">
+      <img src="img/vision.jpg">
+     </div>   
+     <div class="content">
+      <div>
+        <h2>VISION</h2>
+        <p>Our vision is to be the leading real estate service provider in the region and the preferred place of employment for real estate professionals.
+           based on transparency and mutual trust, which serve to build enduring client relationships. As we expand, we’re committed to these principles.</p>
+      </div>
+     </div>
+      </div>
+      <div class="box">
+        <div class="imgBx">
+         <img src="img/mission.jpg">
+        </div>   
+        <div class="content">
+         <div>
+           <h2>MISSION</h2>
+           <p>We’re dedicated to achieving our vision by creating an energetic,  Our ethics are built on our commitment to offer superior customer service, combining an entrepreneurial flair and bespoke service of a fast-growing organisation.</p>
+         </div>
+        </div>
+         </div>
+
+         <div class="box">
+          <div class="imgBx">
+           <img src="img/values.jpg">
+          </div>   
+          <div class="content">
+           <div>
+             <h2>VALUES</h2>
+             <p>Communication, commitment, and client care are the core values that emanate throughout every activity that we undertake. By listening and taking the time to understand our clients’ needs, we’re able to purvey comprehensive, holistic real estate advice. property assets, at home and abroad.</p>
+           </div>
+          </div>
+           </div>
+     
+           
+
+    </div>
+   </section>
+
+   
+<footer>
+  <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
+
+  
+
+<!-- <ul class="social_icon">
+  <div class="facebook">
+    <li class="instagram"><i class="fa-brands fa-instagram icon1 icon"></i></li>
+  </div>
+  <div class="facebook">
+    <li class="facebook"><i class="fa-brands fa-facebook icon2 icon"></i></li>
+  </div>
+  <div class="youtube">
+    <li class="youtube"><i class="fa-brands fa-youtube icon3 icon"></i></li>
+  </div>
+</ul> -->
+<section class="pt-24 pb-24 bg-blue footer-sign">
+  <div class="container1">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-xl-7 col-lg-8 col-md-10">
+        <div class="cta">
+          <h2 class="cta__title text-white">
+            Get Incredible Projects Right Now!
+          </h2>
+
+          <p class="cta__text text-white col-xl-7 px-0 md:mt-8 sign-text">
+            If you don’t have a ready sketch of what you want? <br> We will help you to get the result you dreamed of.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-auto">
+        <div class="button2">
+          <button><a class="button -md -white index-sign btn btn btn-default text-uppercase " href="signin.html">Sign Up</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <ul class="menu-footer">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Ongoing Project</a></li>
+  <li><a href="#">Completed Project</a></li>
+  <li><a href="#">Contact</a></li>
+</ul> -->
+<footer class="footer -type-1 -light">
+
+  <div class="footer__top">
+    <div class="container">
+      <div class="row y-gap-48 justify-content-between">
+
+        <div class="col-lg-4 col-md-6">
+          <div class="footer__item">
+            <h3 class="footer__title">Contact</h3>
+
+            <div class="footer__content pr-20">
+              <div class="footer__content__item">
+                <div class="row">
+                 <div class="col-sm-1">
+                   <p><i class="fas fa-phone"></i></p>
+                 </div>
+                 <div class="col-sm-11">
+                   <p>  <a >+91 8015173115</a> / <a>+91 9597253115</a></p>
+                 </div>
+               </div>
+               
+               <div class="row">
+                 <div class="col-sm-1">
+                <p><i class="fa fa-envelope"></i></p>
+                </div>
+                <div class="col-sm-11">
+                 <a> <p> dcrbuilders3115@gmail.com</p></a>
+                </div>
+              </div>
+              </div>
+
+              <div class="footer__content__item adress">
+                <div class="row">
+                <div class="col-sm-1">
+                <p><i class="fas fa-map-marker-alt s"></i></p>
+                </div>
+                <div class="col-sm-11">
+                 <p>Velandhavalam road Othakkalmandapam Coimbatore 641032</p>
+               </div>
+             </div>
+              </div>
+
+              <div class="footer__content__item">
+                <a data-barba href="https://maps.app.goo.gl/pzfrwTeZDtVY8jxW7" target="_blank" class="button -simple text-black">GET DIRECTIONS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="footer__item">
+            <h3 class="footer__title">OUR SERVICES</h3>
+
+            <div class="footer__content">
+              <div class="footer__content__item">
+                <a data-barba href="ongoing.html">Ongoing Projects</a>
+              </div>
+
+              <div class="footer__content__item">
+                <a data-barba href="ongoing.html">Ready to Move</a>
+              </div>
+
+              <div class="footer__content__item">
+                <a data-barba href="finished.html">finished</a>
+              </div>
+
+              <div class="footer__content__item">
+                <a data-barba href="contact.html">contact us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+<div class="col-lg-2 col-md-6">
+  <div class="footer__item">
+    <h3 class="footer__title">USEFUL LINKS</h3>
+
+    <div class="footer__content">
+      <div class="footer__content__item">
+        <a data-barba href="index.html">Home</a>
+        <div></div>
+      </div>
+
+      <div class="footer__content__item">
+        <a data-barba href="Our Story.html">About</a>
+      </div>
+
+      <div class="footer__content__item">
+        <a data-barba href="finished.html">compleated-projects</a>
+      </div>
+
+      <div class="footer__content__item">
+        <a data-barba href="contact.php">Contact</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6">
+  <div class="footer__item">
+    <h3 class="footer__title">SUBSCRIBE</h3>
+
+    <div class="footer__content">
+      <div class="footer__content__item">
+        <p>We will send you updates on new projects and discounts.</p>
+      </div>
+      <form class="course-form-area contact-page-form course-form text-right" id="email-form"  name="email-form"
+             action="" 
+              method="post" name="email-form">
+      <input class="form-control" id="Email" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''"
+      onblur="this.placeholder = 'Your Email Address '" required="" type="email">
+      <br>
+      <div class="button3">
+      <button class = "click-btn btn btn btn-default text-uppercase" id="submit" name="submit"> submit</button>
+      </div>
+      <script src="Google.js"></script>
+      </div>
+<ul class="social_icon">
+  <div class="facebook">
+    <li class="instagram">
+      <a href="https://www.instagram.com/hitzz_sumesh_/"><i  class="fa-brands fa-instagram icon1 icon"></i></a></li>
+  </div>
+  <div class="facebook">
+    <li class="facebook" >
+      <a href="https://www.facebook.com/people/Dcr-Builders/pfbid0ho26KXZESTtaCpX6hyCUGa9tYhRcqBiT6SnKDfkoBfzwRyhei5qRaNkdeVKdgBLCl/?ref=xav_ig_profile_web"><i  class="fa-brands fa-facebook icon1 icon"></i></a></li>
+  </div>
+  <div class="youtube">
+    <li class="youtube" >
+      <a href="#"><i  class="fa-brands fa-youtube icon1 icon"></i></a></li>
+  </div>
+</ul>
+
+</footer>
+<footer>
+<div class="footer__bottom">
+  <div class="container0">
+    <div class="row ">
+      <div class="col-auto sm:order-2">
+        <div class="footer__bottom_text">© 2024 DCR BUILDERS & Property Developers. All rights reserved.</div>
+        <div class="col-auto sm:d-none">
+          
+          <div class="footer__bottom_text1">Designed by <a href="https://www.instagram.com/hitzz_sumesh_/" >Sumesh</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+    </footer>
+   
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" 
+     integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+     <link rel="shortcut icon" href="img/logo-dcr-removebg-preview.png" />
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+      integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
+      integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+     <title>
+    DCR Builders
+</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+      />
+    </head>
+  </head>
+
+    <!-- <h1>
+      <img src="img/logo-dcr-removebg-preview.png" alt="" width="100" height="100" class="d-inline-block align-text-top">
+       
+    </h1> -->
+
+<body>
+  <header class="nav">
+    
+    <h2><img src="img/logo-dcr-removebg-preview.png" alt="" width="50" height="50" class="d-inline-block align-text-top"></h2>
+   
+    <input type="checkbox" name="id" id="chk1">
+    <div class="logo">
+      <h1>DCR Builders</h1></div>
+    <div class="search-box">
+      <form action="">
+        <input type="text" name="search" id="srch" placeholder="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    <ul>
+      <li class="nav-item ">
+        <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">About</a>
+      </li> -->
+      <li class="nav-item ">
+        
+          <a class="nav-link active text-white" aria-current="page"  href="Our Story.html">About</a>
+        
+        <!-- <ul class="dropdown-menu ">
+          <li><a class="dropdown-item" href="Our Story.html">Our Story</a></li>
+          <li><a class="dropdown-item" href="Our Story.html">Our Founder</a></li>
+          <li><a class="dropdown-item" href="Our Story.html">Vision & Mission</a></li>
+          <li><a class="dropdown-item" href="#">Our Core Values</a></li>
+        </ul> -->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active text-white" aria-current="page" href="ongoing.html">Ongoing Project</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active text-white" aria-current="page" href="finished.html">Completed Project</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active text-white" aria-current="page" href="contact.html">Contact</a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/people/Dcr-Builders/pfbid0ho26KXZESTtaCpX6hyCUGa9tYhRcqBiT6SnKDfkoBfzwRyhei5qRaNkdeVKdgBLCl/?ref=xav_ig_profile_web"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/dcr_builders/"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </li>
+    </ul>
+    <div class="menu">
+      <label for="chk1">
+        <i class="fa fa-bars"></i> 
+      </label>
+     
+    </div>
+    
+  </header>
+
+  <script>  
+    {
+         const nav =document.querySelector(".nav");
+         let lastScrollY = window.scrollY;
+
+         window.addEventListener("scroll", () =>{
+          if (lastScrollY < window.scrollY) {
+            nav.classList.add("nav--hidden")
+          } else {
+            nav.classList.remove("nav--hidden")
+          }
+
+          lastScrollY = window.scrollY;
+         });
+    }
+
+      </script>
+
+  <section>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" >
+          <img src="img/outer4.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="animated bounceInRight" style="animation-delay: 1s">Build Your Dreams</h5>
+            <p class="animated bounceInLeft" style="animation-delay: 2s">We are experienced in Saving Your Money; after all, Your Concern Is our Priority. ... 
+              Please Let Us Guide You Home; We can make Your Dreams Can Come True</p>
+              <p  class="animated bounceInRight" style="animation-delay: 3s"><a href="#">More Info</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img//outer2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="animated slideInDown" style="animation-delay: 1s">Find Your Place</h5>
+            <p class="animated fadeInUp" style="animation-delay: 2s">The house you looked at today and wanted to think about until
+              tomorrow may be the same house someone looked at yesterday and will buy today</p>
+              <p class="animated zoomIn" style="animation-delay: 3s"><a href="#">More Info</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/hand-holding.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5  class="animated zoomIn" style="animation-delay: 1s">A Smart Move</h5>
+            <p  class="animated fadeInLeft" style="animation-delay: 2s">It’s not about the money, though that’s nice to have. At the end of the day, 
+              it’s really about matching the right buyer to the right seller.</p>
+              <p  class="animated zoomIn" style="animation-delay: 3s"><a href="#">More Info</a></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+<section>
+  <div  class="section" >
+   
+    <div class="text">
+      <h1 class="animated fadeInLeft" style="animation-delay: 1s"><u>OUR STORY</u></h1>
+    <h2 class="animated fadeInLeft" style="animation-delay: 1s">WELCOME TO DCR BUILDERS & DEVELOPERS</h2>
+    <p class="animated fadeInLeft" style="animation-delay: 1s">We are DCR BUILDERS &  Developers, one of the best property developers and builders in coimbatore.
+       We are pioneers in developing premium individual villas and residential buildings in Coimbatore.
+        At DCR BUILDERS &  Developers, we understand that your home is not just a place to reside; it's a reflection of your lifestyle and aspirations.
+         Our mission is to transform the city's skyline, one property at a time. 
+         Our deep-rooted commitment to quality and customer satisfaction sets us apart in the crowded real estate market.</p>
+         <div class="button1">
+         <button class="animated fadeInLeft btn btn btn-default text-uppercase" style="animation-delay: 1s"> More</button>
+         </div>
+    </div>
+  <img class="animated fadeInLeft" style="animation-delay: 2s" src="img/dcr-3 (5).jpeg" alt="..." />
+  </div>
+  <div class="container2">
+    <div class="card" style="--clr:#009688;">
+      <div class="imgBx"> 
+        <img src="img/dcr2.jpeg">
+      </div>
+      <div class="content">
+        <h2>Evaluate Property</h2>
+        <p>To evaluate a property's value,
+           a valuer will determine the property,
+            note down information on the type of spaces,
+             in addition to components, fittings or any enhancements.</p>
+             <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="card" style="--clr:#ff3e7f;">
+      <div class="imgBx">
+        <img src="img/dcr1.jpeg">
+      </div>
+      <div class="content">
+        <h2>Meet Your Agent</h2>
+        <p>An agent is a person who has been legally empowered to act on behalf of another person or an entity.
+           The agent may be given decision-making authority.</p>
+           <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="card" style="--clr:#03a9f4;">
+      <div class="imgBx">
+        <img src="img/dcr-3 (5).jpeg">
+      </div>
+      <div class="content">
+        <h2>Close The Deal</h2>
+        <p>The matter's Finished to make an agreement official. 
+          The each side will most likely have to make some compromises in order for the deal to be mutually beneficial and successful.</p>
+          <a href="#">Read More</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<div class="container3">
+  <div class="col-12">
+    <div class="sectionHeading -top-line text-center">
+      <span class="sectionHeading__subtitle">DCR BUILDERS & DEVELOPERS</span>
+      <h2 class="sectionHeading__title">PROJECTS & LOCATIONS</h2>
+    </div>
+
+ 
+
+</div>
+
+
+<section id="slider">
+     <div class="container4">
+      <div class="subcontainer">
+        <div class="slider-wrapper">
+        </div>
+        <br>
+        <div class="my-slider">
+          <div>
+          <div class="slide">
+            <div class="slide-img img-1">
+              <a href ="#">more info</a>
+            </div>
+            <br>
+            <div>
+              <h3>Tamil Nadu1</h3>
+              <p>coimbatore</p>
+            </div>
+            </div>
+          </div>
+          <div>
+            <div class="slide">
+              <div class="slide-img img-2">
+                <a href ="#">more info</a>
+              </div>
+              <br>
+              <div>
+                <h3>Tamil Nadu2</h3>
+                <p>coimbatore</p>
+              </div>
+              </div>
+            </div>
+            <div>
+              <div class="slide">
+                <div class="slide-img img-3">
+                  <a href ="#">more info</a>
+                </div>
+                <br>
+                <div>
+                  <h3>Tamil Nadu3</h3>
+                  <p>coimbatore</p>
+                </div>
+                </div>
+              </div>
+              <div>
+                <div class="slide">
+                  <div class="slide-img img-4">
+                    <a href ="#">more info</a>
+                  </div>
+                  <br>
+                  <div>
+                    <h3>Tamil Nadu4</h3>
+                    <p>coimbatore</p>
+                  </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="slide">
+                    <div class="slide-img img-5">
+                      <a href ="#">more info</a>
+                    </div>
+                    <br>
+                    <div>
+                      <h3>Tamil Nadu4</h3>
+                      <p>coimbatore</p>
+                    </div>
+                    </div>
+                  </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>     
+    
+</section>
+<br>
+<section>
+  <div class="sectionHeading -top-line text-center">
+    <span class="sectionHeading__subtitle">THE END</span>
+    
+  </div>
+  <!-- <div class="underline">
+    <h3>_______</h3>
+    <p>THE END</p>
+  </div> -->
+ <div class="container5">
+  <h1 class="heading">PROPERTY SOLUTIONS</h1>
+  <div class="box-container">
+    <div class="box">
+      <img src="img/card/search_954591.png" alt="">
+      <h3 class="text-white">SEARCH & SHORTLIST</h3>
+      <p>A limited list of important items or individuals.</p>
+    </div>
+
+    <div class="box">
+      <img src="img/card/car_3774278.png" alt="">
+      <h3 class="text-white">SITE VISIT</h3>
+      <p>See and feel the goal of your future home..</p>
+    </div>
+
+    <div class="box">
+      <img src="img/card/house_2163350.png" alt="">
+      <h3 class="text-white">HOME LOAN</h3>
+      <p>Get assistance and advice with the best experts.</p>
+    </div>
+
+    <div class="box">
+      <img src="img/card/auction_1203407.png" alt="">
+      <h3 class="text-white">LEGAL ADVICE</h3>
+      <p>Get the best regarding anything related home.</p>
+    </div>
+
+    <div class="box">
+      <img src="img/card/key_2443038.png" alt="">
+      <h3 class="text-white">CLOSURE</h3>
+      <p>Complete assistance until you get your home.</p>
+    </div>
+    
+ </div>
+ <br>
+ <div class="button4">
+  <button ><a class="button -md -white index-sign btn btn btn-default text-uppercase "href="contact.html">Contact Us</a></button>
+</div>
+ </div>
+ 
+</section>
+
+<section>
+  <div class="sectionHeading -top-line text-center">
+    <span class="sectionHeading__subtitle">STEPS</span>
+    
+  </div>
+  <!-- <div class="underline1">
+    <h3>_______</h3>
+    <p>Steps</p>
+  </div> -->
+  <div class="container6">
+    <h1 class="heading">WORKING PROCESS</h1>
+    <div class="box-container">
+      <div class="box">
+        <img src="img/card/gate.jpg" alt="">
+        <h3 class="text-white">SAFETY</h3>
+        <p>The condition of being safe from undergoing or causing hurt, danger, or loss.</p>
+      </div>
+  
+      <div class="box">
+        <img src="img/card/community.png" alt="">
+        <h3 class="text-white">COMMUNITY</h3>
+        <p>The people living in an area or a group or groups of people who share interests.</p>
+      </div>
+  
+      <div class="box">
+        <img src="img/card/sustain.png" alt="">
+        <h3 class="text-white">SUSTAINABILITY</h3>
+        <p>Using natural resources in a way that we could keep doing for a long time.</p>
+      </div>
+  
+      <div class="box">
+        <img src="img/card/integrity copy.png" alt="">
+        <h3 class="text-white">INTEGRITY</h3>
+        <p>We live in accordance to our deepest values, We are honest with everyone.</p>
+      </div>  
+   </div>
+
+</section>
+<section class="layout-pt-sm layout-pb-sm aminities">
+  <div class="container7">
+    <div class="row">
+      <div class="col-12">
+        <div class="sectionHeading -top-line text-center">
+          <span class="sectionHeading__subtitle">STEPS</span>
+          <h2 class="sectionHeading__title">Building Aminities</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row x-gap-120 y-gap-32 justify-content-center layout-pt-sm">
+
+      <div class="col-lg-2 col-md-6 col-10">
+        <div data-anim="slide-up delay-1" class="background-num -hover text-center">
+          <!-- <div class="background-num__wrap">
+            <div class="background-num__num">01</div>
+          </div> -->
+
+          <div class="d-flex justify-content-center background-num__front">
+            <div class="size-xl d-flex justify-content-center align-items-center">
+              <img class="img-flaticon" src="img/AMINITIES/homee.png">
+            </div>
+          </div>
+
+          <h3 class="text-lg mt-24">Gated Community</h3>
+          <!-- <p class="text-sm text-dark mt-12">Aenean commodo nec ligula eget cum sociis dolor.</p> -->
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6 col-10">
+        <div data-anim="slide-up delay-2" class="background-num -hover text-center">
+
+          <div class="d-flex justify-content-center background-num__front">
+            <div class="size-xl d-flex justify-content-center align-items-center">
+              <img class="img-flaticon" src="img/AMINITIES/compass.png">
+            </div>
+          </div>
+
+          <h3 class="text-lg mt-24">100% Vaasthu</h3>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6 col-10">
+        <div data-anim="slide-up delay-3" class="background-num -hover text-center">
+
+          <div class="d-flex justify-content-center background-num__front">
+            <div class="size-xl d-flex justify-content-center align-items-center">
+              <img class="img-flaticon" src="img/AMINITIES/eb.png">
+            </div>
+          </div>
+
+          <h3 class="text-lg mt-24">E.B Facilities</h3>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6 col-10">
+        <div data-anim="slide-up delay-4" class="background-num -hover text-center">
+
+          <div class="d-flex justify-content-center background-num__front">
+            <div class="size-xl d-flex justify-content-center align-items-center">
+              <img class="img-flaticon" src="img/AMINITIES/road.png">
+            </div>
+          </div>
+
+          <h3 class="text-lg mt-24">Black Tapper Tar Road</h3>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6 col-10">
+        <div data-anim="slide-up delay-4" class="background-num -hover text-center">
+
+          <div class="d-flex justify-content-center background-num__front">
+            <div class="size-xl d-flex justify-content-center align-items-center">
+              <img class="img-flaticon" src="img/AMINITIES/gardening.png">
+            </div>
+          </div>
+
+          <h3 class="text-lg mt-24">Garden Area</h3>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row x-gap-120 y-gap-32 justify-content-center layout-pt-sm">
+
+      <div class="col-lg-2 col-md-6 col-10">
+        <div data-anim="slide-up delay-1" class="background-num -hover text-center">
+          <!-- <div class="background-num__wrap">
+            <div class="background-num__num">01</div>
+          </div> -->
+
+          <div class="d-flex justify-content-center background-num__front">
+            <div class="size-xl d-flex justify-content-center align-items-center">
+              <img class="img-flaticon" src="img/AMINITIES/water.png">
+            </div>
+          </div>
+
+          <h3 class="text-lg mt-24">Water Facilities</h3>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6 col-10">
+        <div data-anim="slide-up delay-2" class="background-num -hover text-center">
+
+          <div class="d-flex justify-content-center background-num__front">
+            <div class="size-xl d-flex justify-content-center align-items-center">
+              <img class="img-flaticon" src="img/AMINITIES/cctv-camera.png">
+            </div>
+          </div>
+
+          <h3 class="text-lg mt-24">24/7 Camera Survelliance</h3>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6 col-10">
+        <div data-anim="slide-up delay-3" class="background-num -hover text-center">
+
+          <div class="d-flex justify-content-center background-num__front">
+            <div class="size-xl d-flex justify-content-center align-items-center">
+              <img class="img-flaticon" src="img/AMINITIES/park.png">
+            </div>
+          </div>
+
+          <h3 class="text-lg mt-24">Childrens Park</h3>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6 col-10">
+        <div data-anim="slide-up delay-4" class="background-num -hover text-center">
+
+          <div class="d-flex justify-content-center background-num__front">
+            <div class="size-xl d-flex justify-content-center align-items-center">
+              <img class="img-flaticon" src="img/AMINITIES/street-lamp.png">
+            </div>
+          </div>
+
+          <h3 class="text-lg mt-24">Street Light</h3>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6 col-10">
+        <div data-anim="slide-up delay-4" class="background-num -hover text-center">
+
+          <div class="d-flex justify-content-center background-num__front">
+            <div class="size-xl d-flex justify-content-center align-items-center">
+              <img class="img-flaticon" src="img/AMINITIES/parking.png">
+            </div>
+          </div>
+
+          <h3 class="text-lg mt-24">Parking</h3>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</section>
+
+<!-- <div id="slidyy">
+  <input type="radio" name="slider" id="slide1" checked>
+  <input type="radio" name="slider" id="slide2">
+  <input type="radio" name="slider" id="slide3">
+
+  <div id="slides">
+    <div id="overflow">
+      <div class="inner">
+        <div class="slide slide_1">
+          <div class="slide_content">
+            <h2>slide 1</h2>
+            <p>Content for slide 1</p>
+          </div>
+        </div>
+        <div class="slide slide_2">
+          <div class="slide_content">
+            <h2>slide 2</h2>
+            <p>Content for slide 2</p>
+          </div>
+        </div>
+        <div class="slide slide_3">
+          <div class="slide_content">
+            <h2>slide 3</h2>
+            <p>Content for slide 3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="controls">
+    <label for="slide1"></label>
+    <label for="slide2"></label>
+    <label for="slide3"></label>
+  </div>
+  <div id="bullets">
+    <label for="slide1"></label>
+    <label for="slide2"></label>
+    <label for="slide3"></label>
+  </div>
+</div>
+<br><br><br> -->
+<section class="layout-pt-sm layout-pb-sm">
+  <!-- container start -->
+  <div class="container8">
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <div class="sectionHeading -top-line text-center">
+          <span class="sectionHeading__subtitle">TESTIMONIALS</span>
+          <h2 class="sectionHeading__title text-white">What People Say</h2>
+        </div>
+      </div>
+    </div>
+
+   
+        <div class="swiper-slide">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+              <div class="testimonials text-center">
+                <p class="testimonials__comment fw-400 text-lg sm:text-sm leading-4xl text-white">
+                  "They were reasonable in answering the queries and responding to the requests. Highly professional service. Highly recommended for stress free real estate sales and services. The price negotiation aspect really well which was well-matched with our expectations."
+                </p>
+
+                <div class="testimonials__author mt-48">
+
+                  <span class="text-sm fw-400 uppercase text-white">LOCAL GUIDE</span>
+                  <h5 class="text-sm fw-400  mt-8">Vishnu Kumar </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav -slider lg:d-none">
+        <div class="nav__item -left js-prev">
+          <i class="icon icon-left-arrow"></i>
+        </div>
+
+        <div class="nav__item -right js-next">
+          <i class="icon icon-right-arrow"></i>
+        </div>
+      </div>
+
+      <div class="pagination -slider mt-48 js-pagination"></div>
+    </div>
+  </div>
+  <!-- container end -->
+</section>
+</body><br><br><br>
+
+
+
+
+
+
+
+<footer>
+  <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
+
+  
+
+<!-- <ul class="social_icon">
+  <div class="facebook">
+    <li class="instagram"><i class="fa-brands fa-instagram icon1 icon"></i></li>
+  </div>
+  <div class="facebook">
+    <li class="facebook"><i class="fa-brands fa-facebook icon2 icon"></i></li>
+  </div>
+  <div class="youtube">
+    <li class="youtube"><i class="fa-brands fa-youtube icon3 icon"></i></li>
+  </div>
+</ul> -->
+<section class="pt-24 pb-24 bg-blue footer-sign">
+  <div class="container1">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-xl-7 col-lg-8 col-md-10">
+        <div class="cta">
+          <h2 class="cta__title text-white">
+            Get Incredible Projects Right Now!
+          </h2>
+
+          <p class="cta__text text-white col-xl-7 px-0 md:mt-8 sign-text">
+            If you don’t have a ready sketch of what you want? <br> We will help you to get the result you dreamed of.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-auto">
+        <div class="button2">
+          <button><a class="button -md -white index-sign btn btn btn-default text-uppercase " href="signin.html">Sign Up</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <ul class="menu-footer">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Ongoing Project</a></li>
+  <li><a href="#">Completed Project</a></li>
+  <li><a href="#">Contact</a></li>
+</ul> -->
+<footer class="footer -type-1 -light">
+
+  <div class="footer__top">
+    <div class="container">
+      <div class="row y-gap-48 justify-content-between">
+
+        <div class="col-lg-4 col-md-6">
+          <div class="footer__item">
+            <h3 class="footer__title">Contact</h3>
+
+            <div class="footer__content pr-20">
+              <div class="footer__content__item">
+                <div class="row">
+                 <div class="col-sm-1">
+                   <p><i class="fas fa-phone"></i></p>
+                 </div>
+                 <div class="col-sm-11">
+                   <p>  <a >+91 8015173115</a> / <a>+91 9597253115</a></p>
+                 </div>
+               </div>
+               
+               <div class="row">
+                 <div class="col-sm-1">
+                <p><i class="fa fa-envelope"></i></p>
+                </div>
+                <div class="col-sm-11">
+                 <a> <p> dcrbuilders3115@gmail.com</p></a>
+                </div>
+              </div>
+              </div>
+
+              <div class="footer__content__item adress">
+                <div class="row">
+                <div class="col-sm-1">
+                <p><i class="fas fa-map-marker-alt s"></i></p>
+                </div>
+                <div class="col-sm-11">
+                 <p>Velandhavalam road Othakkalmandapam Coimbatore 641032</p>
+               </div>
+             </div>
+              </div>
+
+              <div class="footer__content__item">
+                <a data-barba href="https://maps.app.goo.gl/pzfrwTeZDtVY8jxW7" target="_blank" class="button -simple text-black">GET DIRECTIONS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="footer__item">
+            <h3 class="footer__title">OUR SERVICES</h3>
+
+            <div class="footer__content">
+              <div class="footer__content__item">
+                <a data-barba href="ongoing.html">Ongoing Projects</a>
+              </div>
+
+              <div class="footer__content__item">
+                <a data-barba href="ongoing.html">Ready to Move</a>
+              </div>
+
+              <div class="footer__content__item">
+                <a data-barba href="finished.html">finished</a>
+              </div>
+
+              <div class="footer__content__item">
+                <a data-barba href="contact.html">contact us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+<div class="col-lg-2 col-md-6">
+  <div class="footer__item">
+    <h3 class="footer__title">USEFUL LINKS</h3>
+
+    <div class="footer__content">
+      <div class="footer__content__item">
+        <a data-barba href="index.html">Home</a>
+        <div></div>
+      </div>
+
+      <div class="footer__content__item">
+        <a data-barba href="Our Story.html">About</a>
+      </div>
+
+      <div class="footer__content__item">
+        <a data-barba href="finished.html">compleated-projects</a>
+      </div>
+
+      <div class="footer__content__item">
+        <a data-barba href="contact.php">Contact</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6">
+  <div class="footer__item">
+    <h3 class="footer__title">SUBSCRIBE</h3>
+
+    <div class="footer__content">
+      <div class="footer__content__item">
+        <p>We will send you updates on new projects and discounts.</p>
+      </div>
+      <form class="course-form-area contact-page-form course-form text-right" id="email-form"  name="email-form"
+             action="" 
+              method="post" name="email-form">
+      <input class="form-control" id="Email" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''"
+      onblur="this.placeholder = 'Your Email Address '" required="" type="email">
+      <br>
+      <div class="button3">
+      <button class = "click-btn btn btn btn-default text-uppercase" id="submit" name="submit"> submit</button>
+      </div>
+      <script src="Google.js"></script>
+      </div>
+<ul class="social_icon">
+  <div class="facebook">
+    <li class="instagram">
+      <a href="https://www.instagram.com/hitzz_sumesh_/"><i  class="fa-brands fa-instagram icon1 icon"></i></a></li>
+  </div>
+  <div class="facebook">
+    <li class="facebook" >
+      <a href="https://www.facebook.com/people/Dcr-Builders/pfbid0ho26KXZESTtaCpX6hyCUGa9tYhRcqBiT6SnKDfkoBfzwRyhei5qRaNkdeVKdgBLCl/?ref=xav_ig_profile_web"><i  class="fa-brands fa-facebook icon1 icon"></i></a></li>
+  </div>
+  <div class="youtube">
+    <li class="youtube" >
+      <a href="#"><i  class="fa-brands fa-youtube icon1 icon"></i></a></li>
+  </div>
+</ul>
+
+</footer>
+<footer>
+<div class="footer__bottom">
+  <div class="container0">
+    <div class="row ">
+      <div class="col-auto sm:order-2">
+        <div class="footer__bottom_text">© 2024 DCR BUILDERS & Developers. All rights reserved.</div>
+        <div class="col-auto sm:d-none">
+          
+          <div class="footer__bottom_text1">Designed by <a href="https://www.instagram.com/hitzz_sumesh_/" >Sumesh</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+    </footer>
+   
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
